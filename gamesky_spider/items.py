@@ -12,6 +12,7 @@ class GameskyGameInfoItem(scrapy.Item):
 
     collections = 'game_info'
 
+    list_type = scrapy.Field()  # 网页分类
     game_ch_name = scrapy.Field()  # 中文名
     game_en_name = scrapy.Field()  # 英文名
     game_type = scrapy.Field()  # 游戏类型
